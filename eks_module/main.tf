@@ -1,4 +1,3 @@
-
 module "aws_eks_cluster" {
 
    source = "./modules/aws_eks"
@@ -8,6 +7,7 @@ module "aws_eks_cluster" {
     eks_cluster_name              = each.value.eks_cluster_name 
     subnet_ids                    = each.value.eks_subnet_ids
     tags                          = each.value.tags
+
 }
 
 module "aws_eks_node_group" {
@@ -21,6 +21,7 @@ module "aws_eks_node_group" {
     subnet_ids                    = each.value.node_subnet_ids
     nodes_iam_role                = each.value.nodes_iam_role
     tags                          = each.value.tags
+
 }
 
 
