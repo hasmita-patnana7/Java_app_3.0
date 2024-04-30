@@ -1,3 +1,4 @@
+// Jenkins pipeline script written in Groovy for automating the deployment process to an AWS EKS cluster
 @Library('my-shared-library') _
 
 pipeline{
