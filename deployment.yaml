@@ -1,3 +1,7 @@
+#Defines two Kubernetes objects: a Deployment and a Service
+
+# Deployment configuration for myjavaapp
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -19,6 +23,8 @@ spec:
         - containerPort: 8080
 
 ---
+# Service configuration for myjavaapp
+
 apiVersion: v1
 kind: Service
 metadata:
