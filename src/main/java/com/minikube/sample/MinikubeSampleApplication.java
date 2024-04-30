@@ -1,3 +1,4 @@
+/* basic Spring Boot application with auto-configuration enabled */
 package com.minikube.sample;
 
 import org.springframework.boot.SpringApplication;
