@@ -1,3 +1,4 @@
+# define endpoint exposure for web access, set logging levels for specific packages, and configure the name of the Spring application
 management:
   endpoint:
     web:
